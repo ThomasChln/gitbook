@@ -2,7 +2,6 @@ FROM node:slim
 
 RUN npm install --global gitbook-cli &&\
 	gitbook fetch &&\
-	npm cache clear &&\
 	rm -rf /tmp/*
 
 WORKDIR /srv/gitbook
