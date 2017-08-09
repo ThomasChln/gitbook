@@ -19,6 +19,12 @@ $ docker run -p 80:4000 -v /srv/gitbook thomaschln/gitbook
 $ docker run -v /srv/gitbook -v /srv/html thomaschln/gitbook gitbook build . /srv/html
 ```
 
+## Build PDF
+
+```
+$ docker run -v /srv/gitbook -v /srv thomaschln/gitbook gitbook pdf . /srv/doc.pdf
+```
+
 ## Links
 
 [GitHub: GitBook](https://github.com/GitbookIO/gitbook)
