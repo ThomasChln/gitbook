@@ -2,7 +2,7 @@ FROM node:slim
 
 RUN npm install --global gitbook-cli &&\
 	gitbook fetch &&\
-	apt-get update && apt-get install calibre &&\
+	apt-get update && apt-get install calibre -y &&\
 	rm -rf /tmp/*
 
 WORKDIR /srv/gitbook
